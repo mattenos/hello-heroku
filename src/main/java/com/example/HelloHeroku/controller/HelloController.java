@@ -8,4 +8,7 @@ public class HelloController {
 //    @RequestMapping(value="/hello", method = RequestMethod.GET)
     @GetMapping(value="/hello")
     @ResponseStatus(HttpStatus.OK)
+    public String hello(){
+        return "hello";
+    }
 }
